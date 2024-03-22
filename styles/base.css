@@ -63,8 +63,8 @@ button#hamburger.show::before {
 }
 nav {
     display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.5s ease-out;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 nav.show {
     grid-template-rows: 1fr;

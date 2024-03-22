@@ -3,9 +3,8 @@
         display: none;
     }
 
-    nav ul,
-    nav ul.show {
-        display: flex;
+    nav {
+        grid-template-rows: 1fr;
     }
 
     nav ul {
