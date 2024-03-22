@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: left;
 }
-header img {display: block; padding: 10px 2vw;}
+header img {display: block; padding: 16px 10px;}
 header span {font-size: 2rem;}
 
 
@@ -81,7 +81,7 @@ nav ul {overflow: hidden;}
     border: #eee;
     border-radius: 10px;
     box-shadow: 0 0 10px #aaa;
-    margin: .5rem 2vw;
+    margin: .5rem 10px;
     overflow: hidden;
 }
 .myphoto {text-align: center;}
@@ -103,9 +103,7 @@ nav ul {overflow: hidden;}
     text-align: center;
 }
 .courses div {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    text-align: center;
 }
 .courses button {
     padding: .75rem;
@@ -130,6 +128,8 @@ nav ul {overflow: hidden;}
 .complete {
  background-color: #F4F1DE;
 }
+/*https://www.toptal.com/designers/htmlarrows/symbols/check-mark */
+.complete::before {content:"\2713 "}
 
 
 /************************** FOOTER **************************/
