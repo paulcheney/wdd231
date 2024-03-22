@@ -1,0 +1,45 @@
+@media only screen and (min-width: 38rem) {
+    button#hamburger {
+        display: none;
+    }
+
+    nav ul,
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    nav ul li:last-child a {border:none;}
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 16px;
+    }
+
+    .courses {
+        grid-column: 1 / span 2;
+    }
+
+}
+
+/* end media query */
