@@ -122,14 +122,16 @@ nav ul {overflow: hidden;}
 
 
 /************************** DISPLAY COURSES **************************/
+/*https://www.toptal.com/designers/htmlarrows/symbols/check-mark */
 .needed {
     background-color: #E07A5F;
 }
+
 .complete {
  background-color: #F4F1DE;
 }
-/*https://www.toptal.com/designers/htmlarrows/symbols/check-mark */
-.complete::before {content:"\2713 "}
+
+.complete::before {content:"\2713  "}
 
 
 /************************** FOOTER **************************/
