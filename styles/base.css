@@ -61,12 +61,15 @@ button#hamburger::before {
 button#hamburger.show::before {
 	content: "x";
 }
-nav ul {
-	display: none;
+nav {
+    display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
 }
-nav ul.show {
-	display: block;
+nav.show {
+    grid-template-rows: 1fr;
 }
+nav ul {overflow: hidden;}
 
 
 

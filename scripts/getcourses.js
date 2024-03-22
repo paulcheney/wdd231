@@ -1,3 +1,4 @@
+// JSON LIST OF COURSES
 const courses = [
     {
         subject: 'CSE',
@@ -78,21 +79,21 @@ const courses = [
     }
 ]
 
-//---------------------
+//---------- GRAB A REFERENCE TO THE DIVISION WHERE WE DISPLAY THE COURSES 
 const courseoutput=document.querySelector("#crsList")
 
-// ALL Courses
+// DISPLAY ALL Courses
 document.querySelector('#all').addEventListener('click', () => {
     displayCourses(courses)
 }); // end function
 
-// WDD Courses
+// DISPLAY WDD Courses
 document.querySelector('#wdd').addEventListener('click', () => {
     const result = courses.filter((course) => course.subject === 'WDD');
     displayCourses(result)
 }); // end function
 
-// CSE Courses
+// DISPLAY CSE Courses
 document.querySelector('#cse').addEventListener('click', () => {
     const result = courses.filter((course) => course.subject === 'CSE');
     displayCourses(result)
@@ -100,14 +101,14 @@ document.querySelector('#cse').addEventListener('click', () => {
 
 
 
-//loop through the current array of folks
+// ---------------- LOOP THROUGH THE ARRAY OF SENT COURSES 
 function displayCourses(filteredcourses) {
     courseoutput.innerHTML = '';
     filteredcourses.forEach(crs => {
       console.log(crs)
   
       const courseCard = document.createElement('div')
-      // add a complete status class to the  tag
+      // add a class to the division
       switch (crs.completed) {
         case true:
             courseCard.className = "complete"
@@ -117,18 +118,14 @@ function displayCourses(filteredcourses) {
       } // end switch
   
 
-
-  
-
-  
-  
       courseCard.innerHTML=`${crs.subject} ${crs.number}`
-      //personCard.appendChild(party)
-      //personCard.appendChild(contact)
-  
+
       courseoutput.appendChild(courseCard)
       console.log("hi")
   
     });
   }
   
+
+  // auto display all the courses when the page opens
+  displayCourses(courses)
