@@ -61,6 +61,7 @@ button#hamburger::before {
 button#hamburger.show::before {
 	content: "x";
 }
+/************ Animate open and closed *************/
 nav {
     display: grid;
     grid-template-rows: 0fr;

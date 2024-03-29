@@ -3,9 +3,7 @@
         display: none;
     }
 
-  nav {
-        grid-template-rows: 1fr;
-    }
+  nav {grid-template-rows: 1fr;}
 
     nav ul {
         display: flex;
