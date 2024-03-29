@@ -1,0 +1,36 @@
+@media only screen and (min-width: 38rem) {
+    button#hamburger {
+        display: none;
+    }
+
+  nav {grid-template-rows: 1fr;}
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    nav ul li:last-child a {border:none;}
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+} /* end media query */

@@ -1,0 +1,164 @@
+/* COLOR SCHEME */
+/* Red #d4295f */
+/* Orange #f27d80 */
+/* Tan #bed9d2 */
+/* Blue #008b94 */
+/* Navy #2a384a */
+* {
+    font-family: "Cormorant Upright", serif;
+}
+
+/************************** HEADER **************************/
+header {
+    background-color: #bed9d2;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+header img {display: block; padding: 16px 10px;}
+header span:first-child {font-size: 2rem;}
+header span:nth-child(2) {font-size: 1rem;}
+
+
+/************************** NAVIGATION **************************/
+nav {
+    background-color: #f27d80;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: .75rem;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+nav ul li.active a {background-color: #d4295f; color: #fff;}
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/************************** HAMBURGER NAVIGATION **************************/
+button#hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+	background: none;
+	border: none;
+	display: block;
+	padding-bottom: .6rem;
+	font-size: 2rem;
+	color: #2a384a;
+	text-align: center;
+	width: 50px;
+	cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+button#hamburger::before {
+	content: "\2630";
+}
+button#hamburger.show::before {
+	content: "x";
+}
+/************ Animate open and closed *************/
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav.show {
+    grid-template-rows: 1fr;
+}
+nav ul {overflow: hidden;}
+
+.hero {max-width: 1200px;}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+main h1 {
+    margin: .5rem 10px;
+    color: #d4295f;
+}
+main a {
+    color: #d4295f;
+}
+
+
+/************************** DIRECTORY HERE **************************/
+div.theButtons {width: 100%; text-align: center;}
+div.theButtons button.active {background-color: #f27d80;}
+div.theButtons button {
+  margin: 0 1rem; 
+  padding: .7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #666;
+}
+div#members {
+  margin: 0 2vw;
+}
+/*GRID layout here*/
+div.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+  justify-content: center;
+  
+}
+div.grid section {
+  text-align: center;
+  margin: 1rem 0;
+  border: solid 1px #aaa;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+div.grid img:first-child {width: 100%; height: auto;}
+div.grid h3 {margin: .2rem 0;}
+div.grid p {margin: .2rem 0;}
+
+/*LIST layout here*/
+div.list section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  margin: .5rem 0;
+  padding: 5px;
+  border: solid 1px #aaa;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+div.list img:first-child {display: none;}
+
+
+
+
+
+/************************** FOOTER **************************/
+footer {
+    background-color: #bed9d2;
+}
+footer section {
+    padding: 2rem 10px;
+}
+footer section.social {
+    display: flex;
+    justify-content: center
+}
+
+footer img {
+    width: auto;
+    height: 44px;
+    margin: 0 10px;
+}
+footer p {
+    margin: .25rem;
+}

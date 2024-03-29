@@ -36,18 +36,22 @@
     </header>
     <nav id="navbar">
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" width="1200" height="350" alt="Zarahemla">
-        </div>
-        <h1>Home</h1>
 
+        <h1>Directory</h1>
+        <div class="theButtons">
+            <button id="btnGrid" class="active">Grid</button>
+            <button id="btnList" class="">List</button>
+        </div>
+        <div id="members" class="grid">
+            <!-- JS puts stuff here -->
+        </div>
 
 
 
@@ -85,5 +89,6 @@
     
     <script src="scripts/getdates.js"></script>
     <script src="scripts/navigation.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>
