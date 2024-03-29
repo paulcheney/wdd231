@@ -1,0 +1,33 @@
+body {
+    font-family: "Glass Antiqua", cursive;
+    margin: 0;
+  }
+  header, footer {
+    background-color: bisque;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {margin: 0;}
+
+#cards {
+    margin: 10px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+ #cards section {
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 10px;
+    background-color: beige;
+    box-shadow: 5px 5px 10px #999;
+    margin-bottom: 10px;
+ }
+ #cards img {
+    display: block;
+    width: 96%;
+    margin: 10px 2%;
+    height: auto;
+    border-radius: 10px;
+ }
