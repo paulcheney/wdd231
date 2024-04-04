@@ -77,12 +77,33 @@ nav.show {
 }
 nav ul {overflow: hidden;}
 
-.hero {max-width: 1200px;}
+/************ Hero Image *************/
+.hero {
+    max-width: 1200px;
+    position: relative;
+}
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
+.hero a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2a384a;
+}
+
+
+
+/************ Overall Page Styling *************/
 main h1 {
     margin: .5rem 10px;
     color: #d4295f;
@@ -91,6 +112,18 @@ main a {
     color: #d4295f;
 }
 
+/************ Events and Weather *************/
+section.ew {margin: .5rem 10px;}
+section.ew div {background-color: #eee;}
+section.ew h2 {
+    margin: 0;
+    background-color: #d4295f;
+    color: white;
+    padding: 5px 10px;
+}
+section.ew p {
+    margin: 10px;
+}
 
 /************************** DIRECTORY HERE **************************/
 div.theButtons {width: 100%; text-align: center;}
