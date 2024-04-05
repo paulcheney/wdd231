@@ -121,10 +121,24 @@ section.ew h2 {
     color: white;
     padding: 5px 10px;
 }
-section.ew p {
-    margin: 10px;
+div.events p{
+    margin: .75rem 10px
 }
+div.weather div{
+    display: flex;
+}
+div.weather p {
+    font-family: Verdana, sans-serif;
+    margin: .2rem 0;
+    font-size: .75rem;
+    color: #008b94;
 
+}
+#forecast p {
+    margin: .5rem 10px;
+    font-family: Verdana, sans-serif;
+    color: #008b94;
+}
 /************************** DIRECTORY HERE **************************/
 div.theButtons {width: 100%; text-align: center;}
 div.theButtons button.active {background-color: #f27d80;}

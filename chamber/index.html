@@ -32,7 +32,7 @@
         <span>Zarahemla</span>
         <div>Chamber of Commerce</div>
     </div>
-        <button id="hamburger" name="navigation"></button>
+        <button id="hamburger" aria-label="navigation"></button>
     </header>
     <nav id="navbar">
         <ul>
@@ -50,15 +50,24 @@
         <h1>Home</h1>
 
         <section class="ew">
-            <div>
+            <div class="events">
                 <h2>Events</h2>
-                <p>stuff here</p>
+                <p>Monday 6:00pm : Jacob fireside on the Allegory of the Olive Tree</p>
+                <p>Tuesday 10:00am : Coronation of Kink Noah</p>
+                <p>Wednesday 5:00pm : Archery contest for youth ages 16-18</p>
+            </div>
+            <div class="weather">
+                <h2 id="city">Weather</h2>
+                <div>
+                    <img id="weather-icon" src="" alt="" width="50" height="50">
+                    <span id="report"></span>
+                </div>
             </div>
             <div>
-                <h2>Weather</h2>
-                <p>stuff here</p>
+                <h2>Forecast</h2>
+                <span id="forecast"></span>
             </div>
-        </section>
+        </section> <!-- End Events and Weather -->
 
 
 
@@ -95,5 +104,6 @@
     
     <script src="scripts/getdates.js"></script>
     <script src="scripts/navigation.js"></script>
+    <script src="scripts/currentweather.js"></script>
 </body>
 </html>

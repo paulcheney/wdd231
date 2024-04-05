@@ -22,7 +22,7 @@
     /************ Events and Weather *************/
     section.ew {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         column-gap: 10px;
     }
 
