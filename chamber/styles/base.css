@@ -139,6 +139,39 @@ div.weather p {
     font-family: Verdana, sans-serif;
     color: #008b94;
 }
+
+
+/************************** HOME PAGE SPOTLIGHTS HERE **************************/
+#spot div {
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+#spot h2 {
+    background-color: #f27d80;
+    margin: 0;
+    padding: .3rem 0;
+    font-size: 1.1rem;
+}
+#spot p {
+    margin: 0;
+    padding: .5rem;
+}
+#spot img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
 /************************** DIRECTORY HERE **************************/
 div.theButtons {width: 100%; text-align: center;}
 div.theButtons button.active {background-color: #f27d80;}
