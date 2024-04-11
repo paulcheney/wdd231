@@ -81,6 +81,7 @@ const courses = [
 
 //---------- GRAB A REFERENCE TO THE DIVISION WHERE WE DISPLAY THE COURSES 
 const courseoutput=document.querySelector("#crsList")
+const courseDetails=document.querySelector("#course-details")
 
 // DISPLAY ALL Courses
 document.querySelector('#all').addEventListener('click', () => {
@@ -117,11 +118,16 @@ function displayCourses(filteredcourses) {
             courseCard.className = "needed"
       } // end switch
   
-
       courseCard.innerHTML=`${crs.subject} ${crs.number}`
 
+      // added for modal dialog
+      courseCard.addEventListener('click', () => {
+        displayCourseDetails(crs);
+      });
+
+      // attach to html page
       courseoutput.appendChild(courseCard)
-      console.log("hi")
+
   
     });
   }
