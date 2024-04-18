@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarahemla Chamber of Commerce</title>
+    <meta name="description" content="Zarahemla Chamber of Commerce directory page">
+    <meta name="author" content="Paul Cheney">
+
+    <meta property="og:title" content="Zarahemla Chamber of Commerce" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paulcheney.github.io/wdd231/chamber">
+    <meta property="og:image" content="https://paulcheney.github.io/wdd231/chamber/images/hero.webp">
+
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Zarahemla" width="70" height="59">
+        <div>
+        <span>Zarahemla</span>
+        <div>Chamber of Commerce</div>
+    </div>
+        <button id="hamburger"></button>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li  class="active"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1>Join</h1>
+<div class="sbs">
+<section>
+    <h2>Membership Application Form</h2>
+    <form method="GET" action="thankyou.html" class="designOne">
+        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+        <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
+        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+        <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+        <label>Organization <input type="text" name="organization" required  title="organization" autocomplete="organization"></label>
+        <label>Business Decription<textarea name="description"></textarea></label>
+    
+    
+        <h3>Membership Level</h3>
+        <label><input type="radio" name="level" value="Non Profit Membership"> Non Profit Membership</label>
+        <label><input type="radio" name="level" value="Bronze Membership" checked> Bronze Membership</label>
+        <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+        <label><input type="radio" name="level" value="Sealing"> Gold Membership</label>
+    
+    
+        <input type="submit" value="Apply for Membership">
+    </form>
+</section>
+
+
+<section class="mslvl">
+    <h2>Membership Levels</h2>
+    <!-- Non Provit level -->
+    <aside>
+        <h3>Non Profit Membership Level</h3>
+        <button id="ml1Btn">Learn More</button>
+    </aside>
+    <aside>
+        <h3>Bronze Membership Level</h3>
+        <button id="ml2Btn">Learn More</button>
+    </aside>
+    <aside>
+        <h3>Silver Membership Level</h3>
+        <button id="ml3Btn">Learn More</button>
+    </aside>
+    <aside>
+        <h3>Gold Membership Level</h3>
+        <button id="ml4Btn">Learn More</button>
+    </aside>
+        <dialog id="mlModal">
+            <div>
+            <h4 id="mltitle"></h4>
+            <button id="closeModal">X</button>
+            </div>
+            <span id="mldetails"></span>
+        </dialog>
+    
+
+
+
+</section>
+
+</div>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <section class="address">
+            <p>Zarahemla Chamber of Commerce</p>
+            <p>77 Bountiful Way</p>
+            <p>Baja, CA 12345</p>
+            <p>info@zarahemla.org</p>
+            <p>(800) 555-2300</p>
+        </section>
+        <section class="social">
+            <a href="#"><img src="images/facebook.svg" alt="facebook" width="178" height="314"></a>
+            <a href="#"></a><img src="images/twitter.svg" alt="facebook" width="392" height="320"></a>
+            <a href="#"></a><img src="images/linked-in.svg" alt="facebook" width="306" height="307"></a>
+        </section>
+        <section class="project">
+            <p>WDD231 Class Project</p>
+            <p>Paul Cheney</p>
+            <p>&copy; <span id="currentyear"></span> • Paul Cheney • Utah, USA</p>
+            <p id="lastModified"></p>
+        </section>
+        
+    </footer>
+    
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/levels.js"></script>
+</body>
+</html>

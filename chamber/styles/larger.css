@@ -26,6 +26,11 @@
         column-gap: 10px;
     }
 
+    /************ JOIN page *************/
+    .sbs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     /************************** HOME PAGE SPOTLIGHTS HERE **************************/
     #spot {

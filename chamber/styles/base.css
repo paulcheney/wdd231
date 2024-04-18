@@ -108,6 +108,18 @@ main h1 {
     margin: .5rem 10px;
     color: #d4295f;
 }
+main h2 {
+    margin: .5rem 10px;
+    color: #008b94;
+}
+main h3 {
+    margin: .5rem 10px;
+    color: #333;
+}
+main p {
+    margin: .5rem 10px;
+    color: #333;
+}
 main a {
     color: #d4295f;
 }
@@ -221,6 +233,122 @@ div.list img:first-child {display: none;}
 
 
 
+
+/************************** MODAL POPUPS **************************/
+.mslvl aside{
+    border: solid 1px #444;
+    border-radius: 5px 20px;
+    padding: 10px;
+    background-color: #bed9d2;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#mlModal {
+    position: relative;
+    border: 2px solid #f27d80;
+    border-radius: 8px;
+    padding: .5rem;
+    background-color: #eee;
+    box-shadow: 0 0 15px #777;
+    width: 90%;
+}
+
+#mlModal div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    border-bottom: dashed 1px #aaa;
+  }
+  
+  #mlModal h4 {
+    font-size: 1.5rem;;
+    font-weight: 500;
+    margin: 0;
+  }
+  #mlModal span {
+    font-size: 1rem;;
+  }
+
+  ::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  #mlModal button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ccc;
+    font-size: 1.5rem;;
+  }
+
+
+
+
+
+
+/************************** JOIN FORM **************************/
+.sbs {padding: 1rem;}
+form.designOne {
+    margin: 1rem 2%;
+}
+.designOne label {
+    display: block;
+    font-size: .8rem;
+    color: #d4295f;
+    padding-top: .2rem;
+}
+.designOne h3 {
+    font-size: .9rem;
+    color: #E07A5F;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.designOne input[type=text],
+.designOne input[type=tel],
+.designOne input[type=date],
+.designOne input[type=email],
+.designOne textarea,
+.designOne select {
+    display: block;
+    margin: .1rem 0 1rem 0 ;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color:#555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+.designOne input:required {border-left-color: #d70000;}
+.designOne input:focus {border-left-color: black; outline:none;}
+.designOne input:required:valid{border-left-color: green;}
+
+.designOne input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.designOne input:-webkit-autofill{
+-webkit-text-fill-color: #3D405B;
+}
+
+#results {
+background-color: #F4F1DE;
+padding: 0 1rem;
+margin: 10px;
+border: 1px solid #E07A5F;
+border-radius: 6px;
+}
 
 /************************** FOOTER **************************/
 footer {
