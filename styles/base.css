@@ -151,7 +151,7 @@ footer p {margin: .25rem;}
 
 
 /************************** MODAL DIALOG STYLING **************************/
-:modal {
+dialog {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
     padding: 1rem;
@@ -165,7 +165,7 @@ footer p {margin: .25rem;}
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  :modal button {
+  dialog button {
     position: absolute;
     top: 23px;
     right: 23px;
