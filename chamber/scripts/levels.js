@@ -68,5 +68,6 @@ ml4Btn.addEventListener('click', () => {
     mlModal.showModal();
 });
 
-
+//ADD A HIDDEN DATE
+document.querySelector('#today').value = new Date()
 

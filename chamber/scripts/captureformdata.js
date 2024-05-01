@@ -32,5 +32,5 @@ showInfo.innerHTML = `
 <p>Business Name: ${show('organization')} </p>
 <p>Your Phone: ${show('phone')} </p>
 <p>Your email  <a href="mailto:${show('email')}">${show('email')}</a> </p>
-
+<p>Form was submitted on ${show('hiddendate')}</p>
 `
