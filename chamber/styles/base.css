@@ -350,6 +350,36 @@ border: 1px solid #E07A5F;
 border-radius: 6px;
 }
 
+
+
+    /************************** DISCOVER PAGE HERE **************************/
+    .discover {padding: .5rem;}
+    .discover div, .discover figure {
+        margin: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: .5rem 0;
+    }
+    .discover div {
+        border: 1px solid #bed9d2;
+    }
+    .discover figure {
+        border: 1px solid #f27d80;
+        
+    }
+    .discover figcaption {
+        text-align: center;
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+    .discover img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+
 /************************** FOOTER **************************/
 footer {
     background-color: #bed9d2;

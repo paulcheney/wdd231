@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarahemla Chamber of Commerce</title>
+    <meta name="description" content="Zarahemla Chamber of Commerce directory page">
+    <meta name="author" content="Paul Cheney">
+
+    <meta property="og:title" content="Zarahemla Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paulcheney.github.io/wdd231/chamber">
+    <meta property="og:image" content="https://paulcheney.github.io/wdd231/chamber/images/hero.webp">
+
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Zarahemla" width="70" height="59">
+        <div>
+        <span>Zarahemla</span>
+        <div>Chamber of Commerce</div>
+    </div>
+        <button id="hamburger"></button>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main class="discover">
+        <h1>Discover</h1>
+        <section>
+            <div>
+                <h2>I am Watching</h2>
+                <p id="timeBetween"></p>
+            </div>
+            <div>
+                <h2>Demographics</h2>
+                <p>5,000 Lamanites</p>
+                <p>10,000 Nehphites</p>
+               <p>8,000 Jaredites</p>
+            </div>
+            <div>
+                <h2>Military</h2>
+                <p>Captian: Moroni (8,000 men)</p>
+                <p>Commander: Lehi (6,000 men)</p>
+                <p>Commander: Heleman (2,000 stripling warriers)</p>
+            </div>
+            <div>
+                <h2>Government</h2>
+                <p>Chief Judge: Pahoran</p>
+                <p>50 Lower Judges</p>
+            </div>
+        </section>
+        <setion>
+            <figure>
+                <img src="images/alma.webp" alt="Alma Arise" width="500" height="350" loading="lazy">
+                <figcaption>Alma Arise</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ammon.webp" alt="Ammon Defends the Flocks of King Lamoni" width="500" height="350" loading="lazy">
+                <figcaption>Ammon Defends the Flocks of King Lamoni</figcaption>
+            </figure>
+            <figure>
+                <img src="images/alma2.webp" alt="Alma the Younger Counseling His Son" width="500" height="350" loading="lazy">
+                <figcaption>Alma the Younger Counseling His Son</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ammon2.webp" alt="Ammon and King Lamoni" width="500" height="350" loading="lazy">
+                <figcaption>Ammon and King Lamoni</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bro.webp" alt="Brother of Jared Sees the Finger of the Lord" width="500" height="350" loading="lazy">
+                <figcaption>Brother of Jared Sees the Finger of the Lord</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aaron.webp" alt="Brother of Jared Sees the Finger of the Lord" width="500" height="350" loading="lazy">
+                <figcaption>Aaron Reading the Scriptures to Lamoni's Father</figcaption>
+            </figure>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <section class="address">
+            <p>Zarahemla Chamber of Commerce</p>
+            <p>77 Bountiful Way</p>
+            <p>Baja, CA 12345</p>
+            <p>info@zarahemla.org</p>
+            <p>(800) 555-2300</p>
+        </section>
+        <section class="social">
+            <a href="#"><img src="images/facebook.svg" alt="facebook" width="178" height="314"></a>
+            <a href="#"><img src="images/twitter.svg" alt="facebook" width="392" height="320"></a>
+            <a href="#"><img src="images/linked-in.svg" alt="facebook" width="306" height="307"></a>
+        </section>
+        <section class="project">
+            <p>WDD231 Class Project</p>
+            <p>Paul Cheney</p>
+            <p>&copy; <span id="currentyear"></span> • Paul Cheney • Utah, USA</p>
+            <p id="lastModified"></p>
+        </section>
+        
+    </footer>
+    
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/message.js"></script>
+</body>
+</html>
