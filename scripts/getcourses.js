@@ -106,7 +106,7 @@ document.querySelector('#cse').addEventListener('click', () => {
 function displayCourses(filteredcourses) {
     courseoutput.innerHTML = '';
     filteredcourses.forEach(crs => {
-      console.log(crs)
+      //console.log(crs)
   
       const courseCard = document.createElement('div')
       // add a class to the division
@@ -135,3 +135,13 @@ function displayCourses(filteredcourses) {
 
   // auto display all the courses when the page opens
   displayCourses(courses)
+
+
+
+// USE REDUCE TO FIND THE TOTAL NUMBER OF CREDITS
+// https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/
+const totalCredits = courses.reduce((accumulator ,item) => {
+    return accumulator += item.credits;
+}, 0)
+
+document.querySelector('#totalCredits').innerHTML = `The total number of courses for this certificate is ${totalCredits}`

@@ -1,8 +1,9 @@
-const url = './data/members.json';
 const cards = document.querySelector('#members');
 
+const path = './data/members.json';
+
 async function getMembers() {
-  const response = await fetch(url);
+  const response = await fetch(path);
   const data = await response.json();
   console.log(data.members);
   displayMembers(data.members)
@@ -25,6 +26,17 @@ const displayMembers = (allMembers) => {
     myLogo.setAttribute('loading', 'lazy')
     myLogo.setAttribute('width', '300')
     myLogo.setAttribute('height', '200')
+    const myLevel = document.createElement('p')
+    switch(member.level) {
+      case 2:
+        myLevel.textContent="Level = Silver"
+        break;
+        case 3:
+          myLevel.textContent="Level = Gold"
+        break;
+      default:
+        myLevel.textContent="Level is Not for Profit"
+    }
     
     const mySection = document.createElement('section')
     mySection.appendChild(myLogo)
@@ -32,6 +44,7 @@ const displayMembers = (allMembers) => {
     mySection.appendChild(myAddress)
     mySection.appendChild(myPhone)
     mySection.appendChild(myURL)
+    mySection.appendChild(myLevel)
     cards.appendChild(mySection)
   });
 }
