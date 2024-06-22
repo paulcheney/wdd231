@@ -1,19 +1,29 @@
+//use dom content loaded to delay the script until all the HTML has been loaded.
+document. addEventListener ('DOMContentLoaded', () => {
+
+
 const cards = document.querySelector('#members');
 
 const path = './data/members.json';
 
+//function to fetch data
 async function getMembers() {
-  const response = await fetch(path);
-  const data = await response.json();
-  console.log(data.members);
-  displayMembers(data.members)
+  try {
+      const response = await fetch(path);
+      const data = await response.json();
+      console.log(data.members);
+      displayMembers(data.members);
+  } catch (error) {
+      console.error('Error fetching members:', error);
+  }
 }
-
 getMembers();
+
+
 
 const displayMembers = (allMembers) => {
   allMembers.forEach((member) => {
-    const myName = document.createElement('h3')
+    const myName = document.createElement('h2')
     myName.textContent= member.name;
     const myAddress = document.createElement('p')
     myAddress.textContent = member.address
@@ -26,6 +36,7 @@ const displayMembers = (allMembers) => {
     myLogo.setAttribute('loading', 'lazy')
     myLogo.setAttribute('width', '300')
     myLogo.setAttribute('height', '200')
+    myLogo.setAttribute('alt', `${member.name}`)
     const myLevel = document.createElement('p')
     switch(member.level) {
       case 2:
@@ -61,3 +72,5 @@ setList.addEventListener('click',() => {
   setGrid.className=""
   cards.className='list'
 })
+
+}) // end Content Loader
