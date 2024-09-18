@@ -69,5 +69,5 @@ ml4Btn.addEventListener('click', () => {
 });
 
 //ADD A HIDDEN DATE
-document.querySelector('#today').value = new Date()
+document.querySelector('#today').value = new Date();
 
