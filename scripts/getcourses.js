@@ -130,6 +130,13 @@ function displayCourses(filteredcourses) {
 
   
     });
+
+    // USE REDUCE TO FIND THE TOTAL NUMBER OF CREDITS
+    // https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/
+    let totalCredits = filteredcourses.reduce((acc, course) => acc + course.credits, 0);
+    //console.log(totalCredits)
+    document.querySelector('#totalCredits').innerHTML = `The total number of course listed above is ${totalCredits}`
+
   }
   
 
@@ -138,10 +145,5 @@ function displayCourses(filteredcourses) {
 
 
 
-// USE REDUCE TO FIND THE TOTAL NUMBER OF CREDITS
-// https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/
-const totalCredits = courses.reduce((accumulator ,item) => {
-    return accumulator += item.credits;
-}, 0)
 
-document.querySelector('#totalCredits').innerHTML = `The total number of courses for this certificate is ${totalCredits}`
+

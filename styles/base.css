@@ -140,6 +140,7 @@ nav ul {overflow: hidden;}
 
 .complete::before {content:"\2713  "}
 
+.courses p{text-align: center;}
 
 /************************** FOOTER **************************/
 footer {
@@ -172,3 +173,5 @@ dialog {
     padding: .5rem 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
+
+  /****  Ending Comment ****/
