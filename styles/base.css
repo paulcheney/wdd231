@@ -100,7 +100,7 @@ nav ul {overflow: hidden;}
     background-color: #3D405B;
     color: #F4F1DE;
     margin: 0;
-    padding: .5rem 0;
+    padding: .5rem .2rem;
     text-align: center;
 }
 .courses div {
@@ -118,10 +118,13 @@ nav ul {overflow: hidden;}
 	0% { background-color: #F4F1DE; }
     100% { background-color: #E07A5F; }
 }
-
+#crsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 #crsList div {
     padding: .75rem;
-    margin: 1rem;
+    margin: .5rem;
     border-radius: 10px;
 }
 
