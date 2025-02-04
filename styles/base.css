@@ -1,4 +1,4 @@
-/* COLOR SCHEME
+/* -------------- COLOR SCHEME ---------------
 antique white #F4F1DE
 terra cotta #E07A5F
 deep slate blue #3D405B, 
@@ -7,6 +7,12 @@ muted sage green #81B29A */
     font-family: "Cormorant Upright", serif;
 }
 
+
+
+
+
+
+
 /************************** HEADER **************************/
 header {
     background-color: #81B29A;
@@ -14,8 +20,14 @@ header {
     align-items: center;
     justify-content: left;
 }
-header img {display: block; padding: 16px 10px;}
+header img {display: block; margin: 16px 10px; border-radius: 4px; box-shadow: 0 0 10px rgba(0,0,0,0.2);}
 header span {font-size: 2rem;}
+
+
+
+
+
+
 
 
 /************************** NAVIGATION **************************/
@@ -37,6 +49,14 @@ nav ul li a {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 nav ul li.active a {background-color: #E07A5F; color: #000;}
+
+
+
+
+
+
+
+
 
 /************************** HAMBURGER NAVIGATION **************************/
 button#hamburger {
@@ -73,8 +93,11 @@ nav.show {
 nav ul {overflow: hidden;}
 
 
-
-
+/************************** MAIN LAYOUT **************************/
+h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
 
 
 /************************** CARD LAYOUT **************************/

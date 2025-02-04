@@ -27,7 +27,7 @@
         margin: 0 auto;
     }
 
-    main {
+    .sbs {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 16px;
