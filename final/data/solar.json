@@ -1,0 +1,149 @@
+{
+  "solarproducts": [
+    {
+      "name": "SunPower (Maxeon Series)",
+      "description": "SunPower's Maxeon solar panels are among the most efficient in the industry. They are known for their long lifespan, durability, and excellent performance in low-light conditions.",
+      "cost": "$2.50 - $3.00 per watt",
+      "photo_url": "panel1.webp",
+      "type": "panel"
+    },
+    {
+      "name": "LG Solar (NeON Series)",
+      "description": "LG's NeON series offers high efficiency and advanced technology, including excellent performance in low-light conditions. Their panels are also known for their attractive design and durability.",
+      "cost": "$2.40 - $2.90 per watt",
+      "photo_url": "panel2.webp",
+      "type": "panel"
+    },
+    {
+      "name": "Canadian Solar (HiKu Series)",
+      "description": "Canadian Solar is known for its reliable and affordable panels. The HiKu series features high efficiency and performance, with a strong focus on cost-effectiveness for residential and commercial installations.",
+      "cost": "$1.80 - $2.30 per watt",
+      "photo_url": "panel3.webp",
+      "type": "panel"
+    },
+    {
+      "name": "First Solar (Series 6)",
+      "description": "First Solar specializes in thin-film technology and is a leader in large-scale utility installations. The Series 6 panels provide excellent energy yield in hot and dry climates, with a focus on sustainability.",
+      "cost": "$1.00 - $1.40 per watt",
+      "photo_url": "panel4.webp",
+      "type": "panel"
+    },
+    {
+      "name": "REC Group (Alpha Series)",
+      "description": "REC's Alpha series is known for its high efficiency and performance. With a reputation for durability and quality, these panels are a great option for both residential and commercial installations.",
+      "cost": "$2.30 - $2.80 per watt",
+      "photo_url": "panel5.webp",
+      "type": "panel"
+    },
+    {
+      "name": "Trina Solar (Vertex Series)",
+      "description": "Trina Solar's Vertex series offers high power output and efficiency, making it a popular choice for both residential and commercial systems. These panels are known for their strong performance and competitive pricing.",
+      "cost": "$1.80 - $2.40 per watt",
+      "photo_url": "panel6.webp",
+      "type": "panel"
+    },
+
+
+
+
+
+
+    {
+      "name": "Enphase IQ8+",
+      "description": "A high-performance microinverter with advanced grid support capabilities and rapid shutdown compliance.",
+      "cost": "$300",
+      "photo_url": "inverter1.webp",
+      "type": "inverter"
+    },
+    {
+      "name": "SolarEdge SE7600H",
+      "description": "A single-phase HD-Wave inverter known for its high efficiency and lightweight design.",
+      "cost": "$1800",
+      "photo_url": "inverter2.webp",
+      "type": "inverter"
+    },
+    {
+      "name": "SMA Sunny Boy 6.0-US",
+      "description": "A reliable transformerless string inverter with integrated Secure Power Supply.",
+      "cost": "$1600",
+      "photo_url": "inverter3.webp",
+      "type": "inverter"
+    },
+    {
+      "name": "Fronius Primo 5.0-1",
+      "description": "A flexible and efficient residential inverter with Wi-Fi monitoring and energy management functions.",
+      "cost": "$2000",
+      "photo_url": "inverter4.webp",
+      "type": "inverter"
+    },
+    {
+      "name": "Growatt MIN 6000TL-X",
+      "description": "A compact and efficient residential solar inverter with smart monitoring capabilities.",
+      "cost": "$1400",
+      "photo_url": "inverter5.webp",
+      "type": "inverter"
+    },
+    {
+      "name": "Huawei SUN2000-6KTL-L1",
+      "description": "A smart inverter with AI-powered arc fault protection and high efficiency.",
+      "cost": "$1700",
+      "photo_url": "inverter6.webp",
+      "type": "inverter"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "name": "Tesla Powerwall 2",
+      "description": "A high-capacity lithium-ion battery with seamless backup power and smart energy management.",
+      "cost": "$7500",
+      "photo_url": "battery1.webp",
+      "type": "battery"
+    },
+    {
+      "name": "LG Chem RESU 10H",
+      "description": "A compact and efficient lithium-ion solar battery designed for residential energy storage.",
+      "cost": "$6500",
+      "photo_url": "battery2.webp",
+      "type": "battery"
+    },
+    {
+      "name": "Enphase Encharge 10",
+      "description": "An all-in-one AC-coupled storage system with modular design and smart grid compatibility.",
+      "cost": "$8000",
+      "photo_url": "battery3.webp",
+      "type": "battery"
+    },
+    {
+      "name": "BYD Battery-Box Premium HV",
+      "description": "A scalable lithium iron phosphate battery system offering high efficiency and safety.",
+      "cost": "$7000",
+      "photo_url": "battery4.webp",
+      "type": "battery"
+    },
+    {
+      "name": "Sonnen Eco 10",
+      "description": "A durable and smart energy storage solution with advanced load management.",
+      "cost": "$9000",
+      "photo_url": "battery5.webp",
+      "type": "battery"
+    },
+    {
+      "name": "Simpliphi PHI 3.8",
+      "description": "A compact lithium iron phosphate battery known for its reliability and long cycle life.",
+      "cost": "$6000",
+      "photo_url": "battery6.webp",
+      "type": "battery"
+    }
+  ]
+}
