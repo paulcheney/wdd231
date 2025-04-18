@@ -3,7 +3,7 @@
         display: none;
     }
 
-    header {grid-template-columns: 60px auto 44px ;}
+    header {grid-template-columns: 50px auto 44px ;}
 
     nav {
         grid-template-rows: 1fr;
