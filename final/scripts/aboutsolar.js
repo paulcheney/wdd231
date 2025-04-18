@@ -1,5 +1,5 @@
 import { requirements } from '../data/steps.mjs'
-console.log(requirements)
+//console.log(requirements)
 
 const showHere = document.querySelector('#solarsteps')
 const mydialog = document.querySelector('#solarstepsdialog')
@@ -28,9 +28,9 @@ function showstuff(x) {
     //console.log(x)
     mytitle.textContent = x.title
     mylist.innerHTML = ''
-    console.log(x.details)
+    //console.log(x.details)
     x.details.forEach(y => {
-        console.log(y)
+        //console.log(y)
         const item = document.createElement('li')
         item.textContent = y
         mylist.appendChild(item)

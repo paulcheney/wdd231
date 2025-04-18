@@ -1,12 +1,12 @@
 const myInfo = new URLSearchParams(window.location.search);
-console.log(myInfo);
+//console.log(myInfo);
 
-console.log(myInfo.get('first'));
-console.log(myInfo.get('last'));
+//console.log(myInfo.get('first'));
+//console.log(myInfo.get('last'));
 
-console.log(myInfo.get('date'));
+//console.log(myInfo.get('date'));
 
-console.log(myInfo.get('phone'));
+//console.log(myInfo.get('phone'));
 
 
 
