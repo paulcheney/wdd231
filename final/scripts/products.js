@@ -9,11 +9,11 @@ async function getProducts() {
   try {
     const response = await fetch(path);
     const data = await response.json();
-    //console.log(data.solarproducts);
+
     products=data.solarproducts;
     displayProducts(products);
   } catch (error) {
-    //console.error('The error:', error);
+
   }
 }
 getProducts();
@@ -50,7 +50,7 @@ document.querySelector('#battery').addEventListener('click', () => {
 
 const displayProducts = (products) => {
   cards.innerHTML = '';
-  //console.log(products);
+ 
   products.forEach(product => {
     const solarname = document.createElement('h2');
     const solardescription = document.createElement('p');
