@@ -4,7 +4,6 @@ const mainarea = document.querySelector('main')
 let darkmode = localStorage.getItem("darkmode");
 if (darkmode === "on") {
     mainarea.classList.add('darkon');
-
 }
 
 
