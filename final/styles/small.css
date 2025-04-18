@@ -52,13 +52,13 @@ nav ul li a:hover {color: #fff;}
 nav ul li.active a {background-color: #1c2b4d;}
 
 /************ Dark Button *************/
-header #dark img {
+header .dark img {
     width: 22px;
     height: 22px;
 }
 
 /************************** HAMBURGER NAVIGATION **************************/
-button#hamburger, button#dark {
+button.hamburger, button.dark {
 	background: none;
 	border: none;
 	display: block;
@@ -66,16 +66,16 @@ button#hamburger, button#dark {
     height: 44px;
 	cursor: pointer;
 }
-button#hamburger {
+button.hamburger {
     color: #555;
     font-size: 2rem;
     padding-bottom: 5px;
 }
 
-button#hamburger::before {
+button.hamburger::before {
 	content: "\2630";
 }
-button#hamburger.show::before {
+button.hamburger.show::before {
 	content: "x";
 }
 /************ Animate open and closed *************/
@@ -121,7 +121,7 @@ main.darkon h1, main.darkon h2, main.darkon p {
 
 /************************** POPUPS **************************/
 
-#solarsteps section {
+.solarsteps section {
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -129,7 +129,7 @@ main.darkon h1, main.darkon h2, main.darkon p {
     border-radius: 20px;
     box-shadow: 0 0 10px #ccc;
 }
-#solarsteps div {
+.solarsteps div {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -142,7 +142,7 @@ main.darkon h1, main.darkon h2, main.darkon p {
     border: 2px solid #d9c757;
     border-radius: 100%;
 }
-#solarsteps button, #solarstepsdialog button {
+.solarsteps button, .solarstepsdialog button {
     padding: .5rem 1rem;
     font-weight: 700;;
     margin: 5px;
@@ -154,18 +154,18 @@ main.darkon h1, main.darkon h2, main.darkon p {
 ::backdrop {
     background-color: rgba(0,0,0,0.7);
 }
-#solarstepsdialog {
+.solarstepsdialog {
     margin: auto 5vw;
     width: 90vw;
     padding: 10px;
     border: #1c2b4d solid 1px;
     border-radius: 10px;
 }
-#solarstepsdialog ul {
+.solarstepsdialog ul {
     line-height: 125%;
     padding: 0 20px;
 }
-#solarstepsdialog ul li {
+.solarstepsdialog ul li {
     margin-bottom: 10px;
 }
 

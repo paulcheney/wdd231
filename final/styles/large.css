@@ -36,19 +36,19 @@
     margin: 10px;
 }
 /************************** PRODUCT CARDS **************************/
-#products {
+.products {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 /************************** POPUPS **************************/
-#solarsteps {
+.solarsteps {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     margin: 10px;}
 }
-#solarstepsdialog {
+.solarstepsdialog {
     margin: auto 15vw;
     width: 60vw;
 
