@@ -1,23 +1,28 @@
 @media only screen and (min-width: 38rem) {
-    button#hamburger {
+    #hamburger {
         display: none;
     }
 
-  nav {grid-template-rows: 1fr;}
+    nav {
+        grid-template-rows: 1fr;
+    }
 
     nav ul {
         display: flex;
     }
 
-    nav ul li {
+    nav li {
         flex: 1 1 100%;
     }
 
-    nav ul li a {
+    nav  a {
         border: none;
-        border-right: 1px solid rgba(0,0,0,0.2);
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
     }
-    nav ul li:last-child a {border:none;}
+
+    nav li:last-child a {
+        border: none;
+    }
 
     header,
     main,
