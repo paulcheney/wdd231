@@ -135,7 +135,7 @@ function displayCourses(filteredcourses) {
     // https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/
     let totalCredits = filteredcourses.reduce((acc, course) => acc + course.credits, 0);
     //console.log(totalCredits)
-    document.querySelector('#totalCredits').innerHTML = `The total number of course listed below is ${totalCredits}`
+    document.querySelector('#totalCredits').innerHTML = `The total number of course listed above is ${totalCredits}`
 
   }
   

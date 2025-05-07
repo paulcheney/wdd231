@@ -1,29 +1,4 @@
 @media only screen and (min-width: 38rem) {
-    #hamburger {
-        display: none;
-    }
-
-    nav {
-        grid-template-rows: 1fr;
-    }
-
-    nav ul {
-        display: flex;
-    }
-
-    nav li {
-        flex: 1 1 100%;
-    }
-
-    nav  a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.2);
-    }
-
-    nav li:last-child a {
-        border: none;
-    }
-
     header,
     main,
     nav,
@@ -32,14 +7,32 @@
         margin: 0 auto;
     }
 
+    header {
+        grid-template-columns: 24px auto;
+    }
+    #hamburger {
+        display: none;
+    }
+
+    nav {display: block;}
+    nav ul {display: flex; }
+
+
+    nav a {
+        border: none;
+        padding: .5rem 1.5rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    nav li:last-child a {border: none;}
+
     .sbs {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        column-gap: 16px;
     }
 
-    .courses {
-        grid-column: 1 / span 2;
+    .crsList {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }

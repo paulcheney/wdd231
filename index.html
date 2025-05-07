@@ -14,8 +14,8 @@
     <link href="styles/larger.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/getcourses.js" defer></script>
@@ -32,16 +32,15 @@
 </head>
 <body>
     <header>
-        <img src="images/paul.jpg" alt="Paul Cheney" width="50" height="64" loading="lazy">
+        <img src="images/logo.svg" alt="Logo" width="1" height="1" loading="lazy">
         <span>Dr. Paul Cheney</span>
-        <button id="hamburger" aria-label="navigation links"></button>
+        <button id="hamburger" class="hamburger" aria-label="navigation links"></button>
     </header>
     <nav id="navbar">
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="chamber">Chamber</a></li>
+            <li><a href="chamber">Chamber Assignment</a></li>
             <li><a href="final/index.html">Final Project</a></li>
-            <li><a href="https://www.linkedin.com/in/pcheney/">LinkedIn</a></li>
         </ul>
     </nav>
     
@@ -49,18 +48,12 @@
         <h1>Home</h1>
         <div class="sbs">
         <section class="card">
-            <h2>Course Work</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <h2>About Me</h2>
+            <p>Paul Cheney is a professor of Web Design and Development at Utah Valley University in Orem, Utah, near Salem. He holds a master's degree in Instructional Technology from Utah State University and a Ph.D. from the University of Virginia. Cheney has worked as a civilian for the U.S. Air Force, at Brigham Young University, and as Director of Media and Instructional Technology at Southern Virginia University. He specializes in responsive design, content management systems, and virtual reality photography, teaching courses for Pluralsight and running Spartan Design University. He has authored multimedia content, developed online courses, and contributed to free sociology textbooks.</p>
         </section>
-        <section class="card myphoto">
-            <h2>Salem, UT</h2>
-            <figure>
-            <img src="images/salem.webp" width="200" height="250" alt="salem pond" loading="lazy">
-                <figcaption>Salem Pond Bridge</figcaption>
+        <section class="card">
+            <h2>Mug Shot</h2>
+            <img src="images/paul.webp" width="250" height="250" alt="Bro Cheney" loading="lazy">
         </figure>
         </section>
     </div>
@@ -71,13 +64,19 @@
                 <button id="wdd">WDD Courses</button>
                 <button id="cse">CSE Courses</button>
             </div>
-            <p id="totalCredits"></p>
-        <section id="crsList"></section>
-        
+            
+        <section id="crsList" class="crsList"></section>
+        <p id="totalCredits"></p>
     </section>
     <dialog id="course-details"></dialog>
     </main>
     <footer>
+        <section class="social">
+            <a href="#" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="images/icon-github.svg" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="images/icon-linkedin.svg" alt="Limnked In"></a>
+            <a href="#" target="_blank"><img src="images/icon-whatsapp.svg" alt="Whatsw App"></a>
+        </section>
         <p>&copy; <span id="currentyear"></span> • Paul Cheney • Utah, USA</p>
         <p id="lastModified"></p>
     </footer>
