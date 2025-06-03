@@ -1,32 +1,21 @@
-//Grab the  URL for this page from the ? to the end
-let currentUrl = window.location.search;
-console.log(currentUrl);
+const myInfo = new URLSearchParams(window.location.search);
+console.log(myInfo);
 
-// remove the ? from the beginning
-currentUrl = currentUrl.substring(1,currentUrl.length)
-console.log(currentUrl);
+console.log(myInfo.get('first'));
+console.log(myInfo.get('last'));
+console.log(myInfo.get('title'));
+console.log(myInfo.get('email'));
+console.log(myInfo.get('phone'));
+console.log(myInfo.get('organization'));
+console.log(myInfo.get('description'));
 
-//Break the form name value pairs into an array
-formData=currentUrl.split('&')
-console.log(formData)
 
-function show(cup) {
-    formData.forEach((element) => {
-        console.log(element)
-        if (element.startsWith(cup)) {
-            //result=element.split('=')[1]
-            //result=result.replace("%40","@")
-            result=(element.split('=')[1].replace("%40","@"))
-        } // end of if
-    }); // end of loop
-    return(result)
-}
 
-const showInfo = document.querySelector('#results')
-showInfo.innerHTML = `
-<p>Application from ${show('first')} ${show('last')}</p>
-<p>Business Name: ${show('organization')} </p>
-<p>Your Phone: ${show('phone')} </p>
-<p>Your email  <a href="mailto:${show('email')}">${show('email')}</a> </p>
-<p>Form was submitted on ${show('hiddendate')}</p>
-`
+//build the message
+document.querySelector('#results').innerHTML = `
+    <p>Application submission from ${myInfo.get('first')} ${myInfo.get('last')}</p>
+    <p>The ${myInfo.get('title')} of ${myInfo.get('organization')}
+    <p><p> Phone: ${myInfo.get('phone')} </p>
+    <p>Email: ${myInfo.get('email')}</p>
+    <p>Business Description: ${myInfo.get('description')}</p>`
+
