@@ -21,9 +21,6 @@ header span:nth-child(2) {font-size: 1rem;}
 
 
 /************************** NAVIGATION **************************/
-nav {
-    background-color: #f27d80;
-}
 nav ul {
     margin: 0;
     padding: 0;
@@ -68,6 +65,7 @@ button#hamburger.show::before {
 }
 /************ Animate open and closed *************/
 nav {
+    background-color: #f27d80;
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
