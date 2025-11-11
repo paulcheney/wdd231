@@ -1,9 +1,4 @@
-//use dom content loaded to delay the script until all the HTML has been loaded.
-document. addEventListener ('DOMContentLoaded', () => {
-
-
 const cards = document.querySelector('#members');
-
 const path = './data/members.json';
 
 //function to fetch data
@@ -72,5 +67,3 @@ setList.addEventListener('click',() => {
   setGrid.className=""
   cards.className='list'
 })
-
-}) // end Content Loader
