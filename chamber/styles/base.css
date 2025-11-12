@@ -206,10 +206,10 @@ div.weather p {
   text-decoration: none;
   border-radius: 99px;
   background-color: var(--color-primary);
-  &:hover {
-    background-color: var(--color-accent);
-  }
 }
+#spot a:hover {
+  background-color: var(--color-accent);
+} 
 /************************** DIRECTORY HERE **************************/
 div.theButtons {
   width: 100%;
@@ -279,8 +279,8 @@ div.list img:first-child {
   margin-bottom: 1rem;
   animation-duration: 2s;
   animation-name: slidein;
-  h3 {color: white;}
 }
+.mslvl aside h3 {color: white;}
 
 @keyframes slidein {
   0% {
